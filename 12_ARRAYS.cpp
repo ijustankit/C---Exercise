@@ -132,7 +132,7 @@
 // int main()
 // {
 //     int n = 10;
-//     vector<int> v(n, 5); //can initiate like this also. n is number of elements and next 5 is gonna repeat.
+//     vector<int> v(n, 5); //NOTE ROUND BRACES ARE USED I HERE. //can initiate like this also. n is number of elements and next 5 is gonna repeat.
 //     for (auto x : v)
 //     {
 

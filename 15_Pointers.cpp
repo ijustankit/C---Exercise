@@ -540,10 +540,11 @@ but a = a +1 not allowed.
 //     int *p = &i;
 //     int **k = &p;
 //     increment1(k);
+    
 //     increment2(k);
+    
 //     increment3(k);
+//     cout<<i<<endl;
 
 //     return 0;
 // }
-
-

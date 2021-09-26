@@ -443,7 +443,7 @@
 //     return 0;
 // }
 
-//**3. copy assignment operator (=):**
+// **3. copy assignment operator (=):**
 
 // #include <iostream>
 // using namespace std;
@@ -537,3 +537,50 @@
 // - so basically the destructor called automatically when we are exiting from the main function.
 // - but here it's called only two times because s3 is created dynamically. so we have to manually delete the s3 object to deallocate the memory, the destructor gets called for the s3. that's why we used delete s3;
 
+//this keyword chaining 
+// #include <bits/stdc++.h>
+// using namespace std;
+// class student
+// {
+//     int marks;
+//     int name;
+//     int id;
+
+// public:
+//     void display()
+//     {
+//         cout << marks << " " << id << endl;
+//     }
+
+//     void set(int x, int y)
+//     {
+//         marks = x;
+//         id = y;
+//     }
+
+//     student(int x, int y)
+//     {
+//         marks = x;
+//         id = y;
+//     }
+
+//     student &setmarks(int marks)
+//     {
+//         this->marks = marks;
+//         return *this;
+//     }
+//     student &setid(int id)
+//     {
+//         this->id = id;
+//         return *this;
+//     }
+// };
+
+// int main()
+// {
+//     student s1(101, 202);
+//     (s1.setid(5)).setmarks(10);
+//     s1.display();
+
+//     return 0;
+// }

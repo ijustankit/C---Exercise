@@ -731,30 +731,193 @@
 //     return 0;
 // }
 
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     string s = "tinkka";
+//     char fix;
+//     int f = 0;
+//     int flag = 0;
+
+//     while (f < s.length())
+//     {
+
+//         for (int i = 0; i < s.length(); i++)
+//         {
+//             fix = s[f];
+//             if (fix == s[i])
+//                 flag++;
+//         }
+//         f++;
+//         if (flag > 1)
+//             cout << s[f];
+//         else
+//             continue;
+//     }
+
+//     return 0;
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int N;
+//     vector<int> v;
+//     vector<int> result;
+//     cout << "type n : ";
+//     cin >> N;
+    
+//     for (int i = 0; i < N;i++)
+//     {
+//         int k;
+//         cin >> k;
+//         v.push_back(k);
+        
+//     }
+// sort(v.begin(), v.end(), greater<int>());
+    
+//     {
+//         int j = v[0] * v[1] * v[2] * v[3];
+//         cout << "max quadruplets sum : " << j;
+
+//     }
+
+//     return 0;
+// }
+
+
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int change(int p, int b = 8 )
+// {
+//     p = p+b;
+//     return p;
+// }
+
+// int main()
+// {
+//     int a = 102;
+//     int b = 3;
+//     int k = change(a);
+//     cout<<k;
+//     return 0;
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+
+
+// int main()
+// {
+//     vector<int>item_number{101,102,103,104};
+//     vector<string>item_name{"milk","cheese","ghee","bread"};
+//     vector<int>price{42,50,500,40};
+//     vector<int>stock{10,20,15,16};
+//     int serial_number,quantity,temp;
+//     cout << "serial number : ";
+//     cin >> serial_number;
+//     cout << "quantity: ";
+//     cin >> quantity;
+
+//     for (int i = 0; i < item_name.size();i++)
+//     {
+//         if(item_number[i]==serial_number)
+//         {
+//             temp = i;
+//         }
+//     }
+
+//     if(stock[temp]>=quantity)
+//     {
+//         float total = static_cast<float> (price[temp] * quantity);
+//         cout << fixed << setprecision(1) << total << " Rs." << endl;
+//         cout << stock[temp] - quantity << " items left." << endl;
+//     }
+//     else{
+//         cout << "NO stock"<<endl<<stock[temp]<<" left";
+
+//     }
+//         return 0;
+// }
+
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+
+//     int number;
+//     cout << "type : ";
+//     cin >> number;
+
+//     if(number<=200 && number>=100)
+//     {
+
+//         if(number%4==0)
+//     {
+        
+//         {
+//             cout <<"group a : "<< number / 4<<endl;
+//             cout <<"group b : "<< number / 4<<endl;
+//             cout <<"group c : "<< number / 4<<endl;
+//             cout <<"group d : "<< number / 4<<endl;
+//         }
+//     }
+//     else{
+//         int extra = number % 4;
+//         cout <<"group a : "<< number / 4<<endl;
+//         cout <<"group b : "<< number / 4<<endl;
+//         cout <<"group c : "<< number / 4<<endl;
+//         cout <<"group d : "<<(number / 4) + extra <<endl;
+
+
+//     }
+
+
+//     }
+    
+//     return 0;
+// }
+
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int n,a = 0;
+//     vector<int> v{2,5,5,4,2,4,5,5};
+//     map<int, int> m;
+
+//     for(auto x:v)
+//     {
+//         m[x]++;
+//     }
+
+//     for(auto x : m)
+//     {
+//         if(x.second%2==0)
+//         {
+//             a++;
+//         }
+//     }
+
+//     if(a>0)
+//     {
+//         cout << a;
+//     }
+
+//     else{
+//         cout << -1;
+//     }
+//     return 0;
+// }
+
+#include<bits/stdc++.h>
 using namespace std;
 int main()
 {
-    string s = "tinkka";
-    char fix;
-    int f = 0;
-    int flag = 0;
-
-    while (f < s.length())
-    {
-
-        for (int i = 0; i < s.length(); i++)
-        {
-            fix = s[f];
-            if (fix == s[i])
-                flag++;
-        }
-        f++;
-        if (flag > 1)
-            cout << s[f];
-        else
-            continue;
-    }
-
-    return 0;
+    
 }

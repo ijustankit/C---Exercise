@@ -148,11 +148,11 @@
 // int main()
 // {
 //     string str = "my name is Ankit"; //16 including spaces count start with 1 because its counting
-//     cout << str.length() << endl;    //str.length()    for length
-//     str = str + " gfg";              //concatrenate the strings. like python
-//     cout << str << endl;
-//     cout << str.substr(3, 4) << endl; //return name because index 3 is n and then it count 4 elements from n.
-//     cout << str.substr(3) << endl;    //return reaminder from 3rd index.
+//     // cout << str.length() << endl;    //str.length()    for length
+// //     str = str + " gfg";              //concatrenate the strings. like python
+// //     cout << str << endl;
+// //     cout << str.substr(3, 4) << endl; //return name because index 3 is n and then it count 4 elements from n.
+// //     cout << str.substr(3) << endl;    //return reaminder from 3rd index.
 //     cout << str.find("An");           //returns the index of first occurence of first letter.
 //     return 0;
 // }
@@ -211,37 +211,37 @@
 // int main()
 // {
 //     string str = "yo what is up guys";
-//     cout << *(str.end() - 1); //
+//     cout << *(str.end() - 1); // returns element s
 //     cout << "size = " << str.size() << " " << str.length();           //same
 
 //     return 0;
 // }
 
 // //TCS Question
-// #include <iostream>
-// #include <vector>
-// #include <cstring>
-// using namespace std;
-// int main()
-// {
-//     string input;
-//     int count = 0;
-//     vector<string> v = {"break", "case", "continue", "default", "defer", "else", "for", "func", "goto", "if", "map", "range", "return", "struct", "type", "var"};
-//     cin >> input;
-//     for (string x : v)          //pay attention here i am using for each loop to iterate through the elements.
-//     {
-//         if (input == x)
-//         {
-//             count = 1;
-//             break;
-//         }
-//     }
-//     if (count == 1)
-//         cout << input << " is a keyword";
-//     else
-//         cout << input << " is not a keyword";
-//     return 0;
-// }
+#include <iostream>
+#include <vector>
+#include <cstring>
+using namespace std;
+int main()
+{
+    string input;
+    int count = 0;
+    vector<string> v = {"break", "case", "continue", "default", "defer", "else", "for", "func", "goto", "if", "map", "range", "return", "struct", "type", "var"};
+    cin >> input;
+    for (string x : v)          //pay attention here i am using for each loop to iterate through the elements.
+    {
+        if (input == x)
+        {
+            count = 1;
+            break;
+        }
+    }
+    if (count == 1)
+        cout << input << " is a keyword";
+    else
+        cout << input << " is not a keyword";
+    return 0;
+}
 
 // #include <iostream>
 // #include <bits/stdc++.h>
