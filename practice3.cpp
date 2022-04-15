@@ -216,7 +216,6 @@
 //     return 0;
 // }
 
-
 // # include <bits/stdc++.h>
 // using namespace std;
 // int main() {
@@ -242,43 +241,131 @@
 //     cout<<fixed << setprecision(16)<<cp/total<<("\n");
 //     cout<<fixed << setprecision(16)<<cn/total<<("\n");
 //     cout<<fixed << setprecision(16)<<cz/total;
-    
+
 //     return 0;
 // }
 
+// #include<bits/stdc++.h>
+// using namespace std;
 
+// int main()
+// {
 
-#include<bits/stdc++.h>
+//     int n,count=0,temp;
+
+//     cout<<"how many students : ";
+//     cin >> n;
+//     vector<int> score;
+//     int total = 0;
+//     for (int i = 0; i < n;i++)
+//     {
+//         total = 0;
+//         for (int i = 0; i < 5;i++)
+//         {
+//             cin >> temp;
+//             total = total + temp;
+//         }
+//         score.push_back(total);
+//     }
+
+//     for(int i = 1;i<score.size();i++)
+//     {
+//         if(score[0]<score[i])
+//             count++;
+//         }
+//         cout << count;
+
+//         return 0;
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+// int n;
+// bool flag = false;
+// cout<<"type : ";
+// cin>>n;
+// for (int i =2; i<=(n/2);i++)
+// {
+// if(n%i==0)
+// {
+// flag = true;
+// break;
+// }
+
+// }
+
+// if(flag)
+// 	cout<<"non prime";
+// else
+// 	cout<<"prime";
+
+// return 0;
+// }
+
+#include <bits/stdc++.h>
 using namespace std;
-
-
-
 int main()
 {
+    int mp, np, md, nd,sum=0;
+    int m1[10][10], m2[10][10], r[10][10];
+    cout << "type m and n : ";
+    cin >> mp >> np;
+    cin >> md >> nd;
 
-    int n,count=0,temp;
-
-    cout<<"how many students : ";
-    cin >> n;
-    vector<int> score;
-    int total = 0;
-    for (int i = 0; i < n;i++)
+    for (int i = 0; i < mp; i++)
     {
-        total = 0;
-        for (int i = 0; i < 5;i++)
+        for (int j = 0; j < np; j++)
         {
-            cin >> temp;
-            total = total + temp;
+
+            cin >> m1[i][j];
         }
-        score.push_back(total);
     }
 
-    for(int i = 1;i<score.size();i++)
+    for (int i = 0; i < md; i++)
     {
-        if(score[0]<score[i])
-            count++;
+        for (int j = 0; j < nd; j++)
+        {
+
+            cin >> m2[i][j];
         }
-        cout << count;
+    }
+
+    if (np != md)
+    {
+        cout << "multiplication not possible : ";
+    }
+
+    else
+    {
+
+        for (int i = 0; i < mp; i++)
+        {
+            for (int j = 0; j < nd; j++)
+            {
+                for (int k = 0; k < md;k++)
+                {
+                    sum += m1[i][k] * m2[k][j];
+                }
+                r[i][j] = sum;
+                sum = 0;
+            }
+        }
+    }
+
+
+    for (int i = 0; i < mp; i++)
+    {
+        for (int j = 0; j < nd; j++)
+        {
+
+            cout << r[i][j]<<" ";
+        }
+        cout << endl;
+        
+    }
+
 
         return 0;
 }

@@ -28,7 +28,8 @@
 
 // int main()
 // {
-//     char str[] = {'g', 'f', 'g'};                //finds for \0 but nhi milega to apne se kuch print kr lega
+//     char str[] = {'g', 'f', 'g'};                //finds for \0 but nhi milega 
+ apne se kuch print kr lega
 //     cout << str;
 //     return 0;
 // }
@@ -218,30 +219,30 @@
 // }
 
 // //TCS Question
-#include <iostream>
-#include <vector>
-#include <cstring>
-using namespace std;
-int main()
-{
-    string input;
-    int count = 0;
-    vector<string> v = {"break", "case", "continue", "default", "defer", "else", "for", "func", "goto", "if", "map", "range", "return", "struct", "type", "var"};
-    cin >> input;
-    for (string x : v)          //pay attention here i am using for each loop to iterate through the elements.
-    {
-        if (input == x)
-        {
-            count = 1;
-            break;
-        }
-    }
-    if (count == 1)
-        cout << input << " is a keyword";
-    else
-        cout << input << " is not a keyword";
-    return 0;
-}
+// #include <iostream>
+// #include <vector>
+// #include <cstring>
+// using namespace std;
+// int main()
+// {
+//     string input;
+//     int count = 0;
+//     vector<string> v = {"break", "case", "continue", "default", "defer", "else", "for", "func", "goto", "if", "map", "range", "return", "struct", "type", "var"};
+//     cin >> input;
+//     for (string x : v)          //pay attention here i am using for each loop to iterate through the elements.
+//     {
+//         if (input == x)
+//         {
+//             count = 1;
+//             break;
+//         }
+//     }
+//     if (count == 1)
+//         cout << input << " is a keyword";
+//     else
+//         cout << input << " is not a keyword";
+//     return 0;
+// }
 
 // #include <iostream>
 // #include <bits/stdc++.h>

@@ -540,7 +540,7 @@
 //     return 0;
 // }
 
-//trying to make derived class
+// trying to make derived class
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -622,7 +622,7 @@
 //     return 0;
 // }
 
-//palindrome 2nd way
+// palindrome 2nd way
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -765,7 +765,7 @@
 //     return 0;
 // }
 
-//testing
+// testing
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -952,13 +952,13 @@
 //     return 0;
 // }
 
-//your code modification
-// #include<bits/stdc++.h>
-// using namespace std;
-// int main()
-// {
-//     int i,arr[5]={5,4,3,2,1};
-//     int *ptr = &arr[4];        //u didnt assign
+// your code modification
+//  #include<bits/stdc++.h>
+//  using namespace std;
+//  int main()
+//  {
+//      int i,arr[5]={5,4,3,2,1};
+//      int *ptr = &arr[4];        //u didnt assign
 
 //     for(i=0;i<=4;i++)
 //     {
@@ -1063,7 +1063,7 @@
 //                 {
 //                     if (arr[k] + arr[l] + arr[m] == arr[j])
 //                     {
-                        
+
 //                         counter++;
 //                         break;
 //                     }
@@ -1081,22 +1081,33 @@
 // }
 
 
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int a = 31;
+//     while(a>26)
+//     {
+//         a = a % 26;
+//     }
+
+//     cout<<char(64+a);
+//     return 0;
+// }
+
+
 #include<bits/stdc++.h>
 using namespace std;
-int checkamicable(int number)
-{
-    int sum = 0;
-    for (int i = 0; i < (number / 2); i++)
-    {
-        if(number%i==0)
-        {
-            sum = sum + i;
-        }
-    }
-}
-
 int main()
 {
-
-    return 0;
+    
+    int sum = 0;
+    for (int i = 0; i < 100;i++)
+    {
+        
+        sum = sum + i;
+        
+    }
+    cout << sum << endl;
+        return 0;
 }
